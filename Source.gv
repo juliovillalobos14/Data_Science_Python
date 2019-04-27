@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="petal width (cm) <= 0.75\nsamples = 112\nvalue = [40, 36, 36]\nclass = setosa", fillcolor="#e581390d"] ;
+1 [label="samples = 40\nvalue = [40, 0, 0]\nclass = setosa", fillcolor="#e58139ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal width (cm) <= 1.75\nsamples = 72\nvalue = [0, 36, 36]\nclass = versicolor", fillcolor="#39e58100"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal length (cm) <= 4.95\nsamples = 39\nvalue = [0, 35, 4]\nclass = versicolor", fillcolor="#39e581e2"] ;
+2 -> 3 ;
+4 [label="petal width (cm) <= 1.65\nsamples = 34\nvalue = [0, 33, 1]\nclass = versicolor", fillcolor="#39e581f7"] ;
+3 -> 4 ;
+5 [label="samples = 33\nvalue = [0, 33, 0]\nclass = versicolor", fillcolor="#39e581ff"] ;
+4 -> 5 ;
+6 [label="samples = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e5ff"] ;
+4 -> 6 ;
+7 [label="petal width (cm) <= 1.55\nsamples = 5\nvalue = [0, 2, 3]\nclass = virginica", fillcolor="#8139e555"] ;
+3 -> 7 ;
+8 [label="samples = 2\nvalue = [0, 0, 2]\nclass = virginica", fillcolor="#8139e5ff"] ;
+7 -> 8 ;
+9 [label="petal length (cm) <= 5.45\nsamples = 3\nvalue = [0, 2, 1]\nclass = versicolor", fillcolor="#39e5817f"] ;
+7 -> 9 ;
+10 [label="samples = 2\nvalue = [0, 2, 0]\nclass = versicolor", fillcolor="#39e581ff"] ;
+9 -> 10 ;
+11 [label="samples = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e5ff"] ;
+9 -> 11 ;
+12 [label="petal length (cm) <= 4.85\nsamples = 33\nvalue = [0, 1, 32]\nclass = virginica", fillcolor="#8139e5f7"] ;
+2 -> 12 ;
+13 [label="sepal width (cm) <= 3.0\nsamples = 2\nvalue = [0, 1, 1]\nclass = versicolor", fillcolor="#39e58100"] ;
+12 -> 13 ;
+14 [label="samples = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e5ff"] ;
+13 -> 14 ;
+15 [label="samples = 1\nvalue = [0, 1, 0]\nclass = versicolor", fillcolor="#39e581ff"] ;
+13 -> 15 ;
+16 [label="samples = 31\nvalue = [0, 0, 31]\nclass = virginica", fillcolor="#8139e5ff"] ;
+12 -> 16 ;
+}
